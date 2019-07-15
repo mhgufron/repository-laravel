@@ -19,7 +19,7 @@ class BlogController extends Controller
     {
         $blogs = $this->blogRepository->all();
 
-        return view('blog')->withBlogs($blogs);
+        return view('blog.index')->withBlogs($blogs);
     }
 
     public function detail($id)
